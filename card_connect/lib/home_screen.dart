@@ -18,7 +18,10 @@ class HomeScreen extends StatelessWidget {
         child: Container(
           height: 300,
           padding: EdgeInsets.all(20),
-          color: Colors.blue[100],
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(12.0),
+            color: Colors.blue[100],
+          ),
           child: Column(
             spacing: 10,
             children: [
@@ -32,12 +35,15 @@ class HomeScreen extends StatelessWidget {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 spacing: 10,
                 children: [
                   Container(
                     padding: EdgeInsets.all(20),
-                    color: Colors.grey[200],
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12.0),
+                      color: Colors.white,
+                    ),
                     height: 120,
                     child: Image(image: AssetImage('images/man_head.png')),
                   ),
